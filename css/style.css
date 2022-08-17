@@ -43,3 +43,23 @@ header.masthead {
     text-decoration: none;
     color: white;
 }
+
+.margin-for-block {
+    margin-top: 100px;
+}
+
+.font-style-small {
+        font-family: 'Dancing Script', cursive;
+        font-size: 35px;
+}
+
+.size-for-logo-med {
+    font-size: 45px;
+    font-weight: bolder;
+}
+@media (min-width: 992px) {
+#mainNav.navbar-shrink {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    background-color: #fff;
+}
+}
