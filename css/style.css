@@ -57,9 +57,50 @@ header.masthead {
     font-size: 45px;
     font-weight: bolder;
 }
-@media (min-width: 992px) {
+
+.transform {
+    position: relative;
+    overflow: hidden;
+}
+
+.transform > img {
+    display: block;
+    /* aspect-ratio: 1 / 1; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.transform > .text-hover {
+    position: absolute;
+    inset: 0;
+    font-size: 25px;
+    padding: 1rem;
+    background: linear-gradient(to bottom, rgba(241, 82, 108, 0.637) 0%, rgba(216, 216, 123, 0.692) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
+}
+
+.transform > img,
+.transform > .text-hover {
+    transition: 200ms ease-in-out;
+}
+
+.transform > .text-hover.fade {
+    opacity: 0;
+}
+
+.transform:hover > .text-hover.fade {
+    opacity: 1;
+}
+
+
+
+/* @media (min-width: 992px) {
 #mainNav.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
     background-color: #fff;
 }
-}
+} */
